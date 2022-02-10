@@ -48,4 +48,14 @@ int Add(int x,int y)
 {
    return x+y; 
 }
-  
+#include"Add.h"  //引用Add.h头文件
+//int main()
+//{
+//    int a = 10;
+//    int b = 20;
+//    int sum = 0;
+//    //函数调用
+//    sum = Add(a, b);
+//    printf("%d\n", sum);
+//    return 0;
+//}
