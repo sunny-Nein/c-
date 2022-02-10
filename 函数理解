@@ -1,3 +1,4 @@
+传址调用：
 void Add(int* p)
 //{
 //    (*p)++;
@@ -18,6 +19,7 @@ void Add(int* p)
 //    printf("%d", printf("%d", printf("%d", 43)));   
 //    return 0;
 //}
+传值调用：
 ///函数声明：
 //int Add(int x, int y);//x,y可以省略      //可以创建一个Add.h的源文件
 //int main()
