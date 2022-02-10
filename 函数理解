@@ -1,0 +1,39 @@
+void Add(int* p)
+//{
+//    (*p)++;
+//}
+//int main()
+//{
+//    int num = 0;
+//    Add(&num);
+//    printf("num=%d\n", num);//1
+//    Add(&num);
+//    printf("num=%d\n", num);//2
+//    Add(&num);
+//    printf("num=%d\n", num);//3
+//    return 0;
+//}
+//int main()
+//{
+//    printf("%d", printf("%d", printf("%d", 43)));   
+//    return 0;
+//}
+///函数声明：
+//int Add(int x, int y);//x,y可以省略      //可以创建一个Add.h的源文件
+//int main()
+//{
+//    int a = 10;
+//    int b = 20;
+//    int sum = 0;
+//    //函数调用
+//    sum = Add(a, b);
+//    printf("%d\n", sum);
+//    return 0;
+//}
+////函数定义
+////函数在主函数下面时会报错，必须在主函数上面声明  //可以创建一个Add.c的源文件
+//int Add(int x, int y)
+//{
+//    int z = x + y;
+//    return z;
+//}
