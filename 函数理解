@@ -17,7 +17,7 @@ void Add(int* p)
 
 传值调用：
 ///函数声明：
-//int Add(int x, int y);//x,y可以省略      //可以创建一个Add.h的源文件
+//int Add(int x, int y);//x,y可以省略      //可以创建一个Add.h的头文件
 //int main()
 //{
 //    int a = 10;
@@ -35,3 +35,17 @@ void Add(int* p)
 //    int z = x + y;
 //    return z;
 //}
+Add.h的头文件格式
+#ifndef __ADD_H__
+#define __ADD_H__
+//函数的声明  
+int Add(int x,int y);
+
+#endif  //结束
+
+Add.c的源文件
+int Add(int x,int y)
+{
+   return x+y; 
+}
+  
