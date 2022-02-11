@@ -1,0 +1,67 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+#include<string.h>
+//函数递归：
+//程序调用自身的编程技巧成为递归。一个过程或函数在其定义或说明中有直接或间接调用自身的一种方法，它通常把一个大型复杂的问题层层转化
+//为一个与原问题相似的规模较小的问题来求解，递归策略只需少量的程序就可描述出接替过程所需要的多次重复计算，大大地减少了程序的代码量。
+//递归的主要思考方式在于：大事化小。
+//递归的两个必要条件：
+//1.存在限制条件，当满足这个限制条件的时候，递归便不再继续。
+//2.每次递归调用之后越来越接近这个限制条件。
+
+
+
+//内存：
+// 1.栈区：局部变量；函数形参。
+// 2.堆区：动态变量。
+// 3.静区：静态变量。
+//
+
+//接受一个整形，按照顺序打印它的每一位
+//void print(int n)
+//{
+//	if (n > 6)
+//	{
+//		print(n / 10);//每一层递归都会在栈区创建属于自己的变量
+//	}
+//	printf("%d ", n % 10);
+//}
+//int main()
+//
+//{
+//	unsigned int num = 0;
+//	scanf("%d", &num);
+//	print(num);
+//	return 0;
+//}
+//int my_strlen(char* str)
+//{
+//	int count = 0;
+//	while (*str != '\0')
+//	{
+//		count++;
+//		str++;
+//	}
+//	return count;
+//}
+//递归：
+// my_strlen("bit")
+// 1+my_strlen("it")
+// 1+1+my_strlen("t")
+// 1+1+1+my_strlen("\0")
+// 1+1+1+0
+//3
+//int my_strlen(char* str)
+//{
+//	if (*str != '\0')
+//		return 1 + my_strlen(str+1);
+//	else
+//		return 0;
+//}
+//int main()
+//{
+//	char arr[] = "bit";
+//	int len = my_strlen(arr);
+//	printf("%d", len);
+//	return 0;
+//}
